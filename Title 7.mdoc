@@ -1,0 +1,20 @@
+Examine each of the options below and select the correct answer.  
+
+{% choice %}
+{% question %}
+When `DataContractJsonSerializer` encounters JSON fields that do **not** map to `[DataMember]` properties, what happens?
+{% /question %}
+{% option %}
+It throws an exception and aborts deserialization.
+{% /option %}
+{% option answer=true %}
+The unknown fields are silently ignored.
+{% /option %}
+{% option %}
+It automatically adds matching properties at run time.
+{% /option %}
+{% option %}
+It executes those fields as code inside the object’s constructor.
+{% /option %}
+{% /choice %}
+

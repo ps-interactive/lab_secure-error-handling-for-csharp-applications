@@ -1,0 +1,19 @@
+Examine each of the options below and select the correct answer.  
+
+{% choice %}
+{% question %}
+Which practice is **NOT** recommended if you want to avoid buffer-overflow issues in C#?
+{% /question %}
+{% option %}
+Use managed collections such as `List<T>`.
+{% /option %}
+{% option %}
+Avoid `unsafe` blocks unless absolutely necessary.
+{% /option %}
+{% option answer=true %}
+Rely on `stackalloc` spans without bounds checks.
+{% /option %}
+{% option %}
+Leave the compiler’s automatic bounds checking enabled.
+{% /option %}
+{% /choice %}
