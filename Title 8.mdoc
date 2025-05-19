@@ -2,19 +2,18 @@ Examine each of the options below and select the correct answer.
 
 {% choice %}
 {% question %}
-In a malicious payload class, which attribute allows a method to run immediately **after** deserialization?
+Which line in `Program.cs` wires Serilog into the ASP.NET Core host so that all framework logs go through Serilog?
 {% /question %}
-{% option %}
-[OnSerialized]
-{% /option %}
-{% option %}
-[OnDeserializing]
-{% /option %}
 {% option answer=true %}
-[OnDeserialized]
+`builder.Host.UseSerilog();`
 {% /option %}
 {% option %}
-[AfterDeserialize]
+`builder.Logging.AddSerilog();`
+{% /option %}
+{% option %}
+`app.UseSerilog();`
+{% /option %}
+{% option %}
+`Log.ConfigureHost(builder);`
 {% /option %}
 {% /choice %}
-

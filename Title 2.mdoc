@@ -2,19 +2,19 @@ Examine each of the options below and select the correct answer.
 
 {% choice %}
 {% question %}
-In the buffer-overflow demo, which C# keyword had to precede the `Main` method to permit pointer arithmetic?
+In **Production** mode, what does ASP.NET Core return to the client when an unhandled exception occurs by default?
 {% /question %}
+{% option %}
+A full stack trace in JSON
+{% /option %}
 {% option answer=true %}
-unsafe
+A generic 500 Internal Server Error with no stack-trace details
 {% /option %}
 {% option %}
-fixed
+An HTML diagnostics page containing the exception
 {% /option %}
 {% option %}
-volatile
-{% /option %}
-{% option %}
-stackalloc
+A 403 Forbidden response
 {% /option %}
 {% /choice %}
 

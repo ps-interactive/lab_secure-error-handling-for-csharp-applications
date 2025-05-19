@@ -2,19 +2,19 @@ Examine each of the options below and select the correct answer.
 
 {% choice %}
 {% question %}
-To re-enable legacy BinaryFormatter use in .NET 8, which project property did the labs add?
+In the `ErrorHandlingMiddleware`, what `Content-Type` is set for the generic error response?
 {% /question %}
+{% option %}
+text/plain
+{% /option %}
+{% option %}
+text/html
+{% /option %}
 {% option answer=true %}
-<EnableUnsafeBinaryFormatterSerialization>true</EnableUnsafeBinaryFormatterSerialization>
+application/json
 {% /option %}
 {% option %}
-<AllowBinaryFormatter>true</AllowBinaryFormatter>
-{% /option %}
-{% option %}
-<EnableUnsafeDeserialization>true</EnableUnsafeDeserialization>
-{% /option %}
-{% option %}
-<EnableLegacySerialization>true</EnableLegacySerialization>
+application/xml
 {% /option %}
 {% /choice %}
 

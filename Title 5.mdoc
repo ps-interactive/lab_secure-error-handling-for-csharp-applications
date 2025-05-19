@@ -2,19 +2,19 @@ Examine each of the options below and select the correct answer.
 
 {% choice %}
 {% question %}
-Which .NET serializer is deprecated because deserializing untrusted data with it can enable remote-code execution?
+Which NuGet package was added so Serilog can write log events to rolling files?
 {% /question %}
+{% option %}
+Serilog.Enrichers.Thread
+{% /option %}
+{% option %}
+Serilog.Sinks.Debug
+{% /option %}
 {% option answer=true %}
-BinaryFormatter
+Serilog.Sinks.File
 {% /option %}
 {% option %}
-System.Text.Json JsonSerializer
-{% /option %}
-{% option %}
-DataContractJsonSerializer
-{% /option %}
-{% option %}
-XmlSerializer
+Serilog.Formatting.Json
 {% /option %}
 {% /choice %}
 

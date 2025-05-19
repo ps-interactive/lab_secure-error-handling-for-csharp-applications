@@ -3,19 +3,18 @@ Examine each of the options below and select the correct answer.
 
 {% choice %}
 {% question %}
-Which project‐file element must you add to compile C# code that contains pointer operations?
+Which environment variable tells ASP.NET Core whether to run in Development or Production mode?
 {% /question %}
+{% option %}
+DOTNET_ENV
+{% /option %}
+{% option %}
+ASPNET_MODE
+{% /option %}
 {% option answer=true %}
-<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+ASPNETCORE_ENVIRONMENT
 {% /option %}
 {% option %}
-<Unsafe>true</Unsafe>
-{% /option %}
-{% option %}
-<EnablePointers>true</EnablePointers>
-{% /option %}
-{% option %}
-<SkipVerification>true</SkipVerification>
+NETCORE_ENV
 {% /option %}
 {% /choice %}
-
